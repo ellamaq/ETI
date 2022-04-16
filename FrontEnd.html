@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project 2 Front End ETI 461</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("apple-logo.png");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Apple</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#Begin" class="w3-bar-item w3-button"> SEARCH</a>
+      <a href="#account" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ACCOUNT</a>
+      <a href="#accessory" class="w3-bar-item w3-button"><i class="fa fa-th"></i> ACCESSORIES</a>
+      <a href="categories.php" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> SHOP</a>
+      <a href="#support" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> SUPPORT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#Begin" onclick="w3_close()" class="w3-bar-item w3-button"> SEARCH</a>
+  <a href="#account" onclick="w3_close()" class="w3-bar-item w3-button"> ACCOUNT</a>
+  <a href="#accessory" onclick="w3_close()" class="w3-bar-item w3-button"> ACCESSORIES</a>
+  <a href="#shop" onclick="w3_close()" class="w3-bar-item w3-button"> SHOP</a>
+  <a href="#support" onclick="w3_close()" class="w3-bar-item w3-button"> SUPPORT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Innovating the Future</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Innovating the Future</span><br>
+    <span class="w3-large">Leap into the best technology the world runs on!</span>
+    <p><a href="#Begin" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">APPLE</h3>
+  <p class="w3-center w3-large">Our Mission</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>New ProMotion and liquid retina displays, opportunities are limitless.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Bringing the best user experience to its customers through its innovative hardware, software, and services.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Slimmer. Faster. Stronger. Whichever device or preference you have, we got.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Struggling with perfection? Contact our cutting edge support team with your problem.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We know design.</h3>
+      <p>Ever wanted the pinnacle of design in the palm of your hand or in the comfort of your home?<br>Well, we got you covered.</p>
+      <p><a href="#shop" class="w3-button w3-black"><i class="fa fa-th"> </i>Products</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="Iphone.jpg" alt="Iphone" width="1200" height="794">
+    </div>
+  </div>
+</div>
+
+<!-- Shop Section -->
+<div class="w3-container" style="padding:128px 16px" id="shop">
+  <h3 class="w3-center">Devices</h3>
+  <p class="w3-center w3-large">These are the forefront of creativity and productivity</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Macbook.png" alt="MAC" style="width:100%">
+        <div class="w3-container">
+          <h3>Mac</h3>
+          <p class="w3-opacity">Just for you</p>
+          <p>These Laptops and Desktops offer mobility and power to you</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Buy Now</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Iphone13.png" alt="Iphone" style="width:100%">
+        <div class="w3-container">
+          <h3>Iphone</h3>
+          <p class="w3-opacity">Fan Favorite</p>
+          <p>Bigger or Smaller? Don't worry, both pack the same amount of punch.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Buy Now</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Ipad.jpg" alt="Ipad" style="width:100%">
+        <div class="w3-container">
+          <h3>Ipad</h3>
+          <p class="w3-opacity">Rising Popularity</p>
+          <p>Ipad is back for your creative side to get back into gear.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Buy Now</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Apple Watch.jpg" alt="Watch" style="width:100%">
+        <div class="w3-container">
+          <h3>Apple Watch</h3>
+          <p class="w3-opacity">Sports Decision</p>
+          <p>For the athlete, mom or patient these watches help you with your lifestyle</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Buy Now</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">96,000,000+</span>
+    <br>Products Sold
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">4,500,000+</span>
+    <br>Materials Recycled
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">2.2 Billion</span>
+    <br>Users
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">4 Billion</span>
+    <br>Searches
+  </div>
+</div>
+  
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Achievements Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our Achievements</h3>
+      <p>No matter which device calls to you, you are the creator of our systems.</p>
+      <p>Limitless possibilities made by us and by you. Our Apple Family.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design & Programming</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop & Professional Applications</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Accessories Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="accessory">
+  <h3>PRICING & PLANNING</h3>
+  <p class="w3-large">Sometimes you just need it now. So pay later</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Standard</li>
+        <li class="w3-padding-16"><b>256GB</b> Storage</li>
+        <li class="w3-padding-16"><b>100GB</b> Cloud Service</li>
+        <li class="w3-padding-16"><b>10</b> Websites & Creative Applications</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 45</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Buy Now</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">Premium</li>
+        <li class="w3-padding-16"><b>1TB</b> Storage</li>
+        <li class="w3-padding-16"><b>200GB</b> Cloud Service</li>
+        <li class="w3-padding-16"><b>25</b> Websites & Creative Applications</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 75</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Buy Now</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Professional</li>
+        <li class="w3-padding-16"><b>2TB</b> Storage</li>
+        <li class="w3-padding-16"><b>500GB</b> Cloud Service</li>
+        <li class="w3-padding-16"><b>50</b> Websites & Creative Applications</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 125</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Buy Now</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Support Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="support">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Get in touch with the best. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>One Apple Park Way, Cupertino, CA 95014 USA</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 123456</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: Apple@mail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
